@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"&amp;gt;>
+    <title>CV</title>
+    <link rel="stylesheet" href="css/estilos.css" >
+    <script src="https://kit.fontawesome.com/17f44b9d43.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header>
+            <h1>Curriculum Vitae</h1>
+    </header>
+
+    <script src="/json.js">
+    </script>
+
+    <nav>
+        <ul>
+            <li><a class="fa-solid fa-house" href="#home"> Home</a></li>
+            <li><a  class="fa-solid fa-rotate-left" onclick="traer()"> Actualizar CV</a></li>
+            <li><a  class="fa-solid fa-print" onclick="imprimir('principal')"> Imprimir CV</a></li>
+            <li style="float:right"><a class="active" href="#about">About</a></li>
+        </ul>
+    </nav>
+    <div id="principal">
+        <div id="perfil">
+            <div >
+                <h1 id="nombrePerfil"></h1>
+            </div>  
+            <div id="fotoPerfil">
+
+            </div> 
+            <div id="infoContacto"> 
+                <legend style="text-align: center;">Contacto</legend>
+                <div id="iconos">
+                    <p id="usuario" class="fa-solid fa-user"> </p> <br/>                
+                    <p class="fa fa-solid fa-phone" id="telefono"> </p><br/>
+                    <p class="fa fa-solid fa-envelope" id="email" > </p><br/>
+                    <p class="fa fa-solid fa-location-dot" id="localidad"> </p><br/>
+                </div>
+            </div>
+            <div id="infoContacto">
+                <legend style="text-align: center;"> Redes Sociales</legend>
+                <div id="iconos">          
+                    <p class="fa fa-brands fa-facebook" id="facebook"> </p><br/>
+                    <p class="fa fa-brands fa-tiktok" id="tiktok" > </p><br/>
+                    <p class="fa fa-brands fa-twitter" id="twitter"> </p><br/>
+                    <p class="fa fa-brands fa-instagram" id="instagram"> </p><br/>
+                </div>
+            </div>
+            <div id="infoContacto">
+                <legend style="text-align: center;"> Otros</legend>
+                <div id="iconos">          
+                    <p class="fa fa-solid fa-car" > CARNET DE CONDUCIR </p><br/>
+                    <p class="fa fa-solid fa-language"  > INGLES C1</p><br/>
+                </div>
+            </div>
+        </div>
+        
+
+        <div id="informacion">
+            <fieldset>
+                <legend> Datos adicionales </legend>
+                <p id ="genero"></p>
+                <p id = "calle"></p>
+                <p id = "numero"></p>
+                <p id = "ciudad"></p>
+                <p id = "estado"></p>
+                <p id = "codigopostal"></p>
+                <p >Coordenadas: </p>
+                <ol>
+                    <p id = "latitud"></p>
+                    <p id = "longitud"></p>
+                </ol>
+            </fieldset>
+            <br/>
+            <fieldset>
+                <legend> Formacion Academica </legend>
+                    <p> Estudios Primarios: Colegio Nacional de Ushuaia.</p>
+                    <p> Estudios Secundarios: "DOMINGO FAUSTINO SARMIENTO" </p>
+                    <p> Estudios Universitarios: Universidad de Buenos Aires (UBA)  </p>
+            </fieldset>
+            <br/>
+            <fieldset>
+                <legend> Experiencia Laboral </legend>
+                <p>Soporte de sistemas operativos</p>
+                <p>Mantenimiento y soporte de más de 500 equipos informáticos</p>
+                <p>Optimización de la página web en un 15%</p>
+                <p>Tutoriales y talleres para nuevos programadores de la compañía</p>
+            </fieldset>
+            <br/>
+            <fieldset>
+                <legend> Habilidades personales </legend>
+                    <p> Una buena comunicación verbal.</p>
+                    <p> La facilidad para trabajar en equipo. </p>
+                    <p> El pensamiento crítico/lógico.  </p>
+                    <p> La capacidad de liderazgo.</p>
+            </fieldset>
+            <br/>
+        </div>
+
+    </div>
+
+
+    <footer>
+        Copyright © w3ii.com
+    </footer>
+    </body>
+</html>
